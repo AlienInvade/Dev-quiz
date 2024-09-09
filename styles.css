@@ -1,0 +1,389 @@
+/* font family import */ 
+
+@import url('https://fonts.cdnfonts.com/css/adobe-clean');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic:wght@400;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* default */
+@import url('https://fonts.cdnfonts.com/css/adobe-clean');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    line-height: 1.15;
+    background-color: white;
+}
+
+body {
+    font-family: 'Rubik';
+    width: 100%;
+    height: 100%;
+    color: hsl(210, 1%, 40%);
+}
+
+header {
+    position: fixed;
+    width: 82%;
+    z-index: 10000;
+}
+
+main {
+    margin: 0 9%;
+}
+
+/* nav section */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2em 3.5em;
+    position: relative;
+    background-color: white;
+    color: black;
+}
+
+
+
+.num {
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    width: max-content;
+    height: max-content;
+}
+
+.num::before {
+    content: '․';
+    position: absolute;
+    left: 19px;
+}
+
+.num:hover {
+    cursor: pointer;
+}
+
+/*.menu {
+    
+} */
+
+/* section one */
+
+section {
+    width: 100%;
+    position: relative;
+    overflow-y: hidden;
+}
+
+#one h1 {
+    font-size: 2.5rem;
+    margin-top: 75px;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+#one h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-one-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background-color: hsl(0, 0%, 88%);
+    height: 865px;
+}
+
+.section-one-content p {
+    line-height: 1.15;
+    font-size: 1.8rem;
+    padding: 1rem 22.2rem;
+}
+
+/* second section */ 
+#two {
+    padding: 4em 0;
+    background-color: hsl(0, 11%, 95%);
+}
+
+.square {
+    width: 780px;
+    height: 600px;
+    float: left;
+    background-color:  hsl(210, 2%, 60%);
+}
+
+.section-two-content {
+    margin-left: 7rem;
+}
+
+.content-container {
+    display: inline-block;
+    width: 450px;
+    text-align: left;
+    height: 600px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-top: 75px;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.section-btn {
+    width: 150px;
+    height: 40px;
+    margin-top: 50px;
+    background-color: hsl(210, 2%, 60%);
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+}
+
+/* section three */
+
+#three {
+    background-color: hsl(0, 11%, 95%);
+    height: 700px
+}
+
+
+.section-three-square {
+    float: right;
+}
+
+.section-three-content {
+    margin-left: 5rem;
+    width: 460px;
+}
+
+.section-p {
+    line-height: 1.15;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* section four */ 
+
+#four {
+    padding: 6rem 2rem;
+    background-color: hsl(0, 8%, 88%);
+}
+.section-four-container {
+    display: grid;
+    grid-template-columns: 300px 500px 400px;
+    grid-template-rows: 200px 200px 250px;
+    gap: 2.5rem;
+    place-content: center;
+}
+
+.grid-item {
+    color: white;
+    background-color:  hsl(210, 2%, 60%);
+    padding: 2rem 2.5rem;
+    border: 1px solid hsl(216, 2%, 58%);
+}
+
+.card-p {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+
+.one {
+    width: 250px;
+    grid-area: span 2 / 1;
+    margin-left: 2rem;
+}
+
+.two {
+    color: black;
+    background-color: hsl(0, 8%, 88%);
+    border: none;
+    width: 100%;
+    position: relative;
+    top: -80px;
+}
+
+.select-box {
+    border: none;
+    appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+
+.three {
+    width: 250px;
+    grid-area: span 2 / 3;
+    margin-left: 2rem;
+}
+
+.four {
+    width: 250px;
+    height: 300px;
+    grid-area: 3 / 1;
+}
+
+.five {
+    margin-top: 10rem;
+    width: 250px;
+    height: 325px;
+    margin-left: 10rem;
+    grid-area: span 3 / 2;
+}
+
+.six {
+    width: 380px;
+    height: 300px;
+    grid-area: 3 / 3 ;
+    margin-right: 4rem;
+}
+
+/* section five */ 
+
+#five {
+    padding: 4em 2em;
+    background-color: hsl(0, 11%, 95%);
+}
+
+
+.section-five-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    color: white;
+    background-color: hsl(210, 2%, 60%);
+    width: 370px;
+    height: 370px;
+    padding: 2rem 2.5rem;
+}
+
+.section-five-btn {
+    background-color: white;
+    color: hsl(210, 2%, 58%);
+    font-weight: bold;
+}
+
+.btn1 {
+    margin-top: 85px;
+}
+
+.btn2 {
+    margin-top: 20px;
+}
+
+.btn3 {
+    margin-top: 9.5rem;
+}
+
+/* section six */
+
+#six {
+    padding: 14em 2em;
+    background-color: hsl(0, 11%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-six-container {
+    background-color: hsl(0, 0%, 88%);
+    width: 80%;
+    height: 600px;
+    position: relative;
+}
+
+.section-six-square {
+    width: 320px;
+    height: 230px;
+}
+
+.dark {
+    position: absolute;
+    background-color: hsl(210, 2%, 60%);
+}
+
+.white {
+    position: absolute;
+    background-color: white;
+}
+
+.s-s-one {
+    top: -50px;
+    left: -90px;
+}
+
+.s-s-two {
+    top: 70px;
+    left: 150px;
+}
+
+.s-s-three {
+    top: 170px;
+    left: 380px;
+}
+
+.s-s-four {
+    top: 270px;
+    left: 580px;
+}
+
+.s-s-five {
+    top: 370px;
+    left: 780px;
+}
+
+.s-s-six {
+    top: 470px;
+    left: 980px;
+}
+
+
+/* javascript toggle functions */ 
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+
