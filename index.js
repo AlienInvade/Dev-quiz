@@ -16,3 +16,8 @@ function hoverOut() {
   
 }
 
+
+function openMenu() {
+  document.getElementsByClassName('menu').style.right = '0%';
+  document.getElementById('menu').style.opacity = '1';
+}
