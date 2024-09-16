@@ -16,8 +16,17 @@ function hoverOut() {
   
 }
 
+const menuContainer = document.getElementsByClassName("menu");
+const menuBar = document.getElementsByClassName("menu");
+
+menuContainer.addEventListener("click", openMenu);
 
 function openMenu() {
   document.getElementsByClassName('menu').style.right = '0%';
   document.getElementById('menu').style.opacity = '1';
+}
+
+function closeMenu() {
+  document.getElementsByClassName('menu').style.right = '100%';
+  document.getElementById('menu').style.opacity = '0';
 }
