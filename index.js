@@ -22,8 +22,8 @@ const menuBar = document.getElementsByClassName("menu");
 menuContainer.addEventListener("click", openMenu);
 
 function openMenu() {
-  document.getElementsByClassName('menu').style.right = '0%';
-  document.getElementById('menu').style.opacity = '1';
+  menuBar.style.right = '5%';
+  menuContainer.style.opacity = '0';
 }
 
 function closeMenu() {
