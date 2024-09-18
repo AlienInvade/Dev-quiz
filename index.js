@@ -19,14 +19,16 @@ function hoverOut() {
 const menuContainer = document.getElementsByClassName("menu");
 const menuBar = document.getElementsByClassName("menu");
 
-menuContainer.addEventListener("click", openMenu);
+$("#open").click(
+  function () {
+    menuBar.classList.add("menu");
+    menuBar.add("#menu")
+  })
 
-function openMenu() {
-  menuBar.style.right = '5%';
-  menuContainer.style.opacity = '0';
-}
+$("#close").click(
+  function () {
+    menuBar.classList.remove("menu");
+    menuBar.remove("#menu")
+  }
 
-function closeMenu() {
-  document.getElementsByClassName('menu').style.right = '100%';
-  document.getElementById('menu').style.opacity = '0';
-}
+)
