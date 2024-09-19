@@ -19,16 +19,13 @@ function hoverOut() {
 const menuContainer = document.getElementsByClassName("menu");
 const menuBar = document.getElementsByClassName("menu");
 
-$("#open").click(
-  function () {
+$("#open").On("click", function () {
     menuBar.classList.add("menu");
     menuBar.add("#menu")
   })
 
-$("#close").click(
-  function () {
+$("#close").On("click", function () {
     menuBar.classList.remove("menu");
     menuBar.remove("#menu")
   }
-
 )
