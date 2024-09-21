@@ -16,16 +16,30 @@
     <header>
         <nav class="nav" id="nav">
             <p class="num">9</p>
-            <i class="fa fa-bars menu-icon" id="open"></i>
-            <div class="menu">
-                <div id="close">&#10133;</div>
+            <!--Menu bar -->
+            <div class="menuBar-container" onclick="openMenu()"> 
+                <div class="menuBar">
+                    <span class="menu-one"></span>
+                    <span class="menu-two"></span>
+                    <span class="menu-three"></span>
+                </div>
+            </div>
+
+            <div id="container">
+                <!-- X-container --> 
+                <div id="x-container" onclick="closeMenu()">
+                    <div class="x">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                    </div>
+                </div>
                 <ul id="menu">
-                    <li><a href="#one">Section 1</a></li>
-                    <li><a href="#two">Section 2</a></li>
-                    <li><a href="#three">Section 3</a></li>
-                    <li><a href="#four">Section 4</a></li>
-                    <li><a href="#five">Section 5</a></li>
-                    <li><a href="#six">Section 6</a></li>
+                    <li><a href="#">Section 1</a></li>
+                    <li><a href="#">Section 2</a></li>
+                    <li><a href="#">Section 3</a></li>
+                    <li><a href="#">Section 4</a></li>
+                    <li><a href="#">Section 5</a></li>
+                    <li><a href="#">Section 6</a></li>
                 </ul>
             </div>
             
@@ -72,16 +86,9 @@
     <!-- Section 4-->
     <section id="four">
         <div class="section-four-container">
-            <div class="grid-item one">
+            <div class="grid-item one-item">
                 <h4>Title</h4>
                 <p class="card-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-            </div>
-            <div class="grid-item two select-container">
-                <!--<select class="select-box" name="select" id="item-select" placeholder="Select">
-                    <option value="item-1">Item 1</option>
-                    <option value="item-2">Item 2</option>
-                    <option value="item-3">Item 3</option>
-                </select> -->
             </div>
             <div class="grid-item three">
                 <h4>Title</h4>

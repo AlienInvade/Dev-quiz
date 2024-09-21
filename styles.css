@@ -44,7 +44,7 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 2em 3.5em;
+    padding: 0.5rem 3.5em;
     position: relative;
     background-color: white;
     color: black;
@@ -267,7 +267,7 @@ h4 {
 }
 
 
-.one {
+.one-item {
     width: 250px;
     grid-area: span 2 / 1;
     margin-left: 2rem;
@@ -437,3 +437,103 @@ h4 {
 }
 
 
+
+/* menu */
+
+.menuBar-container {
+    float: right;
+    margin: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#x-container {
+    margin: 20px;
+    float: right;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#menu li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin: 5px 0px;
+    transition: all 0.3s ease;
+}
+
+#menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+#container {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: #e3e7f3;
+    text-align: center;
+    transition: all 0.6s ease;
+}
+
+#menu li a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* create a an X  */
+
+
+span {
+    width: 50px;
+    height: 10px;
+    background-color: #000;
+}
+
+.one {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.two {
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+
+/* create a menu bar */
+
+.menuBar {
+    cursor: pointer;
+}
+
+.menuBar span {
+    display: block;
+    margin: 15px 0px;
+    width: 50px;
+    height: 0.5px;
+    border-radius: 10px;
+    background-color: hsl(210, 1%, 40%);
+}
+
+.menu-two {
+    height: 0.5px;
+    background-color: hsl(210, 1%, 40%);
+}
+
+.menu-three {
+    font-weight: bold;
+    background-color: hsl(210, 1%, 40%);
+}
