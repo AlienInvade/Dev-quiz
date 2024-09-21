@@ -50,8 +50,6 @@ main {
     color: black;
 }
 
-
-
 .num {
     font-size: 3rem;
     font-weight: bold;
@@ -273,7 +271,7 @@ h4 {
     margin-left: 2rem;
 }
 
-.two {
+.two-item {
     color: black;
     background-color: hsl(0, 8%, 88%);
     border: none;
@@ -448,10 +446,9 @@ h4 {
 }
 
 #x-container {
-    margin: 20px;
+    margin: 0px 24%;
+    margin-top: 56px;
     float: right;
-    color: #000;
-    font-size: 20px;
     cursor: pointer;
 }
 
@@ -459,17 +456,13 @@ h4 {
     display: inline-block;
     padding: 10px;
     text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    color: #000;
     margin: 5px 0px;
-    transition: all 0.3s ease;
 }
 
 #menu {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 22%;
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
@@ -480,25 +473,22 @@ h4 {
 #container {
     position: fixed;
     top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    background: #e3e7f3;
+    right: 8%;
+    display: none;
+    width: 31%;
+    height: 99%;
+    background: white;
     text-align: center;
     transition: all 0.6s ease;
 }
 
-#menu li a:hover {
-    background-color: #000;
-    color: #fff;
-}
 
 /* create a an X  */
 
 
 span {
-    width: 50px;
-    height: 10px;
+    width: 40px;
+    height: 0.5px;
     background-color: #000;
 }
 
