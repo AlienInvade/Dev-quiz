@@ -68,19 +68,19 @@ main {
     cursor: pointer;
 }
 
-.menu-icon {
+/* menu */
+
+.menuBar-container {
     float: right;
     margin: 20px;
     font-size: 25px;
     cursor: pointer;
 }
 
-#close {
-    margin: 20px;
+#x-container {
+    margin: 0px 24%;
+    margin-top: 56px;
     float: right;
-    color: #000;
-    transform: rotate(45deg);
-    font-size: 20px;
     cursor: pointer;
 }
 
@@ -89,39 +89,78 @@ main {
     padding: 10px;
     text-decoration: none;
     font-size: 20px;
-    font-weight: bold;
-    color: hsl(210, 1%, 40%);;
     margin: 5px 0px;
-    transition: all 0.3s ease;
+}
+
+#menu li a:hover {
+    cursor: pointer;
 }
 
 #menu {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 22%;
     transform: translate(-50%, -50%);
     list-style: none;
-    text-align: left;
-    opacity: 1;
-    transition: all 1s ease;
+    opacity: 0;
 }
 
-.menu {
+#container {
     position: fixed;
-    top: 20px;
-    right: 5%;
-    width: 25%;
-    height: 50%;
-    opacity: 1;
-    background-color: #e3e7f3;
-    text-align: left;
-    transition: all 0.6s ease;
-} 
-
-#menu li a:hover {
-    background-color: #000;
-    color: #fff;
+    top: 0;
+    right: 8%;
+    display: none;
+    width: 31%;
+    height: 99%;
+    background: white;
 }
+
+
+/* create a an X  */
+
+
+span {
+    width: 40px;
+    height: 0.5px;
+    background-color: #000;
+}
+
+.one {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.two {
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+
+/* create a menu bar */
+
+.menuBar {
+    cursor: pointer;
+}
+
+.menuBar span {
+    display: block;
+    margin: 15px 0px;
+    width: 50px;
+    height: 0.5px;
+    border-radius: 10px;
+    background-color: hsl(210, 1%, 40%);
+}
+
+.menu-two {
+    height: 0.5px;
+    background-color: hsl(210, 1%, 40%);
+}
+
+.menu-three {
+    font-weight: bold;
+    background-color: hsl(210, 1%, 40%);
+}
+
 
 section {
     width: 100%;
@@ -433,4 +472,5 @@ h4 {
 .cursor {
     cursor: pointer;
 }
+
 
