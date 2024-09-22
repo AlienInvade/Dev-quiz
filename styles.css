@@ -413,6 +413,7 @@ h4 {
 
 .option .option-text {
     font-size: 20px;
+    width: max-content;
     color: hsla(240, 1%, 14%, 0.915);
 }
 
