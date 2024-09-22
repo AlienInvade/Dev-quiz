@@ -50,7 +50,9 @@ options.forEach( option => {
 })
 
 document.getElementById("x-select-container").addEventListener("click", () => {
-  document.querySelector(".item-container").style.display = "none";    
+  document.querySelector(".item-container").style.display = "none";   
+  sBtn_text.innerText = "Select";
+  optionMenu.classList.toggle("active");
 });
   
 
