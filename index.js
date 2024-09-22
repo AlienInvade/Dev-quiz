@@ -49,7 +49,7 @@ options.forEach( option => {
     })
 })
 
-document.getElementById("x-container").addEventListener("click", () => {
+document.getElementById("x-select-container").addEventListener("click", () => {
   document.querySelector(".item-container").style.display = "none";    
 });
   
