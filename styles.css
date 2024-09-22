@@ -557,3 +557,48 @@ h4 {
 }
 
 
+/* pop up page */
+
+.item-container {
+    position: absolute;
+    top: 32%;
+    transform: translate(-50%, -32%);
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    z-index: 1;
+    display: none;
+}
+
+#x-container {
+    width: 40px;
+    height: 0.5px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#x-container .x {
+    position: relative;
+    top: -260px;
+    left: 450px;
+}
+
+.one {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.two {
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.item-name {
+    font-size: 30px;
+}

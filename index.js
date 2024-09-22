@@ -31,10 +31,11 @@ function closeMenu() {
 }
 
 // select menu
-optionMenu = document.querySelector(".select-menu"),
+const optionMenu = document.querySelector(".select-menu"),
       selectBtn = optionMenu.querySelector(".select-btn"),
       options = optionMenu.querySelectorAll(".option"),
       sBtn_text = optionMenu.querySelector(".sBtn-text");
+      const item_name = document.getElementById("item-name");
 
 selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
 
@@ -42,11 +43,16 @@ options.forEach( option => {
     option.addEventListener("click", ()=>{
         let selectedOption = option.querySelector(".option-text").innerText;
         sBtn_text.innerText = selectedOption;
-
+        item_name.innerText = selectedOption;
+        document.querySelector(".item-container").style.display = "flex";
         optionMenu.classList.remove("active");
     })
 })
 
+document.getElementById("x-container").addEventListener("click", () => {
+  document.querySelector(".item-container").style.display = "none";    
+});
+  
 
 
 
